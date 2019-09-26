@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/920deb55d5.js"></script>
+
+    <!-- My Own CSS | for footer-->
+    <link href="http://127.0.0.1:5000/file/yey.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="container">
+
+            <!-- Favourite -->
+            <div class="row"><br>
+                <div class="col s12">
+                    <center>
+                        <h5>
+                            <b><i>-- Your Favourite Digimon --</i></b>
+                        </h5>
+                    </center>
+                </div>
+                <div class="col s4">
+                </div>
+                <div class="col s4">
+                    <div class="card-panel amber accent-3">
+                        <div class="row">
+                            <center>
+                                <img src="{{fav[0][4]}}" width="50" height="50">
+                                <h6 class="white-text"><b>{{fav[0][0]}}</b></h6>
+                            </center>
+                            <div class="col s4">
+                                <h6 class="white-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{fav[0][1]}}</center></i></h6>
+                            </div>
+                            <div class="col s4">
+                                <h6 class="white-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{fav[0][2]}}</center></i></h6>
+                            </div>
+                            <div class="col s4">
+                                <h6 class="white-text"><i><center><i class="fas fa-tint"></i>&nbsp{{fav[0][3]}}</center></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                </div>
+
+                <!-- 1st Recomendation -->
+                <div class="col s12"><br><br>
+                        <center>
+                            <h5>
+                                <b><i>-- Digimon Recomendation--</i></b>
+                            </h5>
+                        </center><br>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel">
+                            <div class="row">
+                                <center>
+                                    <img src="{{recomen[0][4]}}" width="50" height="50">
+                                    <h6 class="black-text"><b>{{recomen[0][0]}}</b></h6>
+                                </center>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{recomen[0][1]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{recomen[0][2]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-tint"></i>&nbsp{{recomen[0][3]}}</center></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel">
+                            <div class="row">
+                                <center>
+                                    <img src="{{recomen[1][4]}}" width="50" height="50">
+                                    <h6 class="black-text"><b>{{recomen[1][0]}}</b></h6>
+                                </center>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{recomen[1][1]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{recomen[1][2]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-tint"></i>&nbsp{{recomen[1][3]}}</center></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel">
+                            <div class="row">
+                                <center>
+                                    <img src="{{recomen[2][4]}}" width="50" height="50">
+                                    <h6 class="black-text"><b>{{recomen[2][0]}}</b></h6>
+                                </center>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{recomen[2][1]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{recomen[2][2]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-tint"></i>&nbsp{{recomen[2][3]}}</center></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2nd Recomendation -->
+                    <div class="col s4">
+                        <div class="card-panel">
+                            <div class="row">
+                                <center>
+                                    <img src="{{recomen[3][4]}}" width="50" height="50">
+                                    <h6 class="black-text"><b>{{recomen[3][0]}}</b></h6>
+                                </center>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{recomen[3][1]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{recomen[3][2]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-tint"></i>&nbsp{{recomen[3][3]}}</center></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel">
+                            <div class="row">
+                                <center>
+                                    <img src="{{recomen[4][4]}}" width="50" height="50">
+                                    <h6 class="black-text"><b>{{recomen[4][0]}}</b></h6>
+                                </center>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{recomen[4][1]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{recomen[4][2]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-tint"></i>&nbsp{{recomen[4][3]}}</center></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="card-panel">
+                            <div class="row">
+                                <center>
+                                    <img src="{{recomen[5][4]}}" width="50" height="50">
+                                    <h6 class="black-text"><b>{{recomen[5][0]}}</b></h6>
+                                </center>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-layer-group"></i>&nbsp{{recomen[5][1]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-shoe-prints"></i>&nbsp{{recomen[5][2]}}</center></i></h6>
+                                </div>
+                                <div class="col s4">
+                                    <h6 class="black-text"><i><center><i class="fas fa-tint"></i>&nbsp{{recomen[5][3]}}</center></i></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <center><br>
+                            <a class="btn btn-success amber accent-3" href="http://127.0.0.1:5000/"><i class="fas fa-arrow-circle-left"></i>&nbsp&nbsp&nbspBack</a>
+                        </center>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </main>
+    <footer class="page-footer amber accent-3">
+        <div class="footer-copyright">
+            <div class="container">
+                <center>
+                    Digimon Recomender by M. Khakim Hidayad <br>
+                    &copy; 2019 | All Right Reserved
+                </center>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
