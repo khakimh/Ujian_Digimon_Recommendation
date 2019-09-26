@@ -15,21 +15,24 @@ def home():
 
 @app.route('/hasil', methods = ['POST'])
 def hasil():
-    data = request.form
-    digimon = data['digimon'].capitalize()
-    indexx = df[df['digimon'] == digimon].index.values[0]
-    bestScore = list(enumerate(score[indexx]))
-    sortedDigimon = sorted(bestScore, key=lambda i: i[1], reverse=True)
-    recomen = []
-    fav = []
-    for i in sortedDigimon[:7]:
-        if df.iloc[i[0]]['digimon'] != digimon:
-            recomen.append([df.iloc[i[0]]['digimon'], df.iloc[i[0]]['stage'], df.iloc[i[0]]['type'], df.iloc[i[0]]['attribute'], df.iloc[i[0]]['image']])
-        else:
-            fav.append([df.iloc[i[0]]['digimon'], df.iloc[i[0]]['stage'], df.iloc[i[0]]['type'], df.iloc[i[0]]['attribute'], df.iloc[i[0]]['image']])
-    print(recomen)
-    print(fav)
-    return render_template ('hasil.html', recomen=recomen, fav=fav)
+    try:
+        data = request.form
+        digimon = data['digimon'].capitalize()
+        indexx = df[df['digimon'] == digimon].index.values[0]
+        bestScore = list(enumerate(score[indexx]))
+        sortedDigimon = sorted(bestScore, key=lambda i: i[1], reverse=True)
+        recomen = []
+        fav = []
+        for i in sortedDigimon[:7]:
+            if df.iloc[i[0]]['digimon'] != digimon:
+                recomen.append([df.iloc[i[0]]['digimon'], df.iloc[i[0]]['stage'], df.iloc[i[0]]['type'], df.iloc[i[0]]['attribute'], df.iloc[i[0]]['image']])
+            else:
+                fav.append([df.iloc[i[0]]['digimon'], df.iloc[i[0]]['stage'], df.iloc[i[0]]['type'], df.iloc[i[0]]['attribute'], df.iloc[i[0]]['image']])
+        print(recomen)
+        print(fav)
+        return render_template ('hasil.html', recomen=recomen, fav=fav)
+    except:
+        return render_template ('error.html')
 
 if __name__ == '__main__':
 
